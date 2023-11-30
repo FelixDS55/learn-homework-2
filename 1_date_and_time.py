@@ -14,9 +14,9 @@ def print_days():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    my_date_today = datetime.now()
-    my_date_yest = datetime.now() - timedelta(days=1)
-    my_date_30_ago = datetime.now() - timedelta(days=30)
+    my_date_today = date.today()
+    my_date_yest = date.today() - timedelta(days=1)
+    my_date_30_ago = date.today() - timedelta(days=30)
     print(my_date_30_ago)
     print(my_date_today)
     print(my_date_yest)
