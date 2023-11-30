@@ -17,11 +17,9 @@ def main():
     В ней надо заменить pass на ваш код
     """
     with open('referat.txt', 'r', encoding='utf-8') as file:
-        my_read = file.read().replace('\n', ' ')
-        len_str = 0
-        for str_ in my_read:
-            len_str += len(str_)
-        print(len_str)
+        my_read = file.read()
+
+        print(len(my_read))
 
         print(len(my_read.split()))
         my_read_for_file1 = my_read.replace('.', '!')
